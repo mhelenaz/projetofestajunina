@@ -1,37 +1,61 @@
-/* Definindo o estilo geral da página */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fef6e4; /* Cor de fundo suave */
-    color: #3c3c3c;
+/* Resetando margens e preenchimento */
+* {
     margin: 0;
     padding: 0;
-    text-align: center;
+    box-sizing: border-box;
 }
 
-/* Estilo do cabeçalho */
+/* Estilo básico para o corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fef6e4; /* Fundo suave */
+    color: #3c3c3c;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
 header {
     background-color: #d70000;
     padding: 20px;
-    color: #fff;
-    font-size: 2.5rem;
+    color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-/* Estilo das seções de informações */
-.informacoes, .programacao {
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #f4d03f;
-    border-radius: 10px;
+h1 {
+    font-size: 3rem;
+    margin: 0;
 }
 
-/* Títulos das seções */
+/* Seção de introdução */
+.intro {
+    padding: 20px;
+    background-color: #f4d03f;
+    color: #3c3c3c;
+}
+
 h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #d70000;
 }
 
-/* Lista de informações */
+.imagem-principal {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Seção de detalhes do evento */
+.detalhes {
+    padding: 20px;
+    background-color: #f4d03f;
+    color: #3c3c3c;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -39,31 +63,57 @@ ul {
     line-height: 1.8;
 }
 
-/* Estilo do rodapé */
+/* Seção de comidas */
+.comidas {
+    padding: 20px;
+    background-color: #ff7f50;
+    color: #3c3c3c;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.galeria-comidas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.comida-item {
+    width: 150px;
+    text-align: center;
+}
+
+.comida-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Seção de brincadeiras */
+.brincadeiras {
+    padding: 20px;
+    background-color: #ff7f50;
+    color: #3c3c3c;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
 footer {
     background-color: #28a745;
     color: white;
     padding: 20px;
     font-size: 1.2rem;
     font-weight: bold;
+    margin-top: 20px;
 }
 
 /* Estilo das bandeirinhas */
-.bandeirinhas img {
-    width: 50px;
-    margin: 10px;
-}
-
-/* Adicionando animação para bandeirinhas */
 .bandeirinhas {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    animation: flutuar 3s ease-in-out infinite;
 }
 
-@keyframes flutuar {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
+.bandeirinhas img {
+    width: 50px;
+    margin: 10px;
 }
