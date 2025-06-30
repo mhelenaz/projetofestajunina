@@ -9,6 +9,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f7f7f7;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
@@ -54,6 +55,27 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+.img-responsive {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.comidas-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.comida img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
 footer {
     background-color: #2e6d75;
     color: #fff;
@@ -61,17 +83,11 @@ footer {
     padding: 10px;
 }
 
-button {
-    background-color: #ff9f00;
-    border: none;
-    padding: 10px 20px;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
+footer a {
+    color: #ff9f00;
+    text-decoration: none;
 }
 
-button:hover {
-    background-color: #e89b00;
+footer a:hover {
+    text-decoration: underline;
 }
