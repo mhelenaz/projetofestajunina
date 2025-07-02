@@ -3,55 +3,102 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Festa Junina do Arraiá do Bairro!</title>
+<title>Arraiá do Bairro São João</title>
+
+<!-- Fonte decorativa -->
+<link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+
 <style>
   body {
-    font-family: 'Arial', sans-serif;
-    background-color: #fff8dc;
-    color: #333;
+    font-family: 'Mountains of Christmas', cursive, Arial, sans-serif;
+    background: #fff0d6 url('https://i.imgur.com/1QqBvQq.png') repeat; /* Xadrez amarelo claro */
     margin: 0;
-    padding: 20px;
+    padding: 0 15px 30px 15px;
+    color: #5a2e0d;
   }
   header {
-    background-color: #e67300;
+    background-color: #d35400;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 25px 10px;
+    position: relative;
+  }
+  /* Bandeirinhas */
+  header::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    width: 220px;
+    height: 40px;
+    background: url('https://i.imgur.com/9wJmzSq.png') center center no-repeat;
+    background-size: contain;
+    transform: translateX(-50%);
   }
   h1 {
     margin: 0 0 10px 0;
-    font-size: 2em;
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px #7a3c00;
+  }
+  p.subtitle {
+    font-size: 1.25rem;
+    margin-top: 0;
+    font-weight: 700;
   }
   section {
-    margin: 20px 0;
+    background: #ffe6b3cc;
+    border-radius: 12px;
+    margin: 25px auto;
+    max-width: 700px;
+    padding: 20px 25px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.15);
   }
-  .precos, .brincadeiras {
-    background-color: #ffefd5;
-    padding: 15px;
-    border-radius: 8px;
+  h2 {
+    border-bottom: 3px solid #d35400;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
   }
   ul {
-    list-style-type: square;
-    padding-left: 20px;
-    margin: 10px 0;
+    list-style-image: url('https://i.imgur.com/Z0TknvG.png'); /* ícone de milho */
+    padding-left: 25px;
+  }
+  ul li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  .img-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+  .img-row img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
   }
   footer {
     text-align: center;
-    margin-top: 30px;
-    font-size: 0.9em;
-    color: #555;
+    font-size: 1rem;
+    color: #a05200;
+    margin-top: 40px;
   }
 
   /* Responsividade */
   @media (max-width: 600px) {
-    body {
-      padding: 10px;
-    }
     h1 {
-      font-size: 1.5em;
+      font-size: 2rem;
     }
     section {
-      margin: 15px 0;
+      padding: 15px 15px;
+      margin: 15px auto;
+      max-width: 95%;
+    }
+    .img-row img {
+      width: 90px;
     }
   }
 </style>
@@ -60,23 +107,36 @@
 
 <header>
   <h1>🌽 Arraiá do Bairro São João 🎶</h1>
-  <p>Venha curtir nossa Festa Junina cheia de alegria, comidas típicas e muita diversão!</p>
+  <p class="subtitle">Venha curtir nossa Festa Junina cheia de alegria, comidas típicas e muita diversão!</p>
 </header>
 
 <section>
   <h2>📅 Data e Hora</h2>
+  <div class="img-row">
+    <img src="https://i.imgur.com/FJJdJIL.png" alt="Calendário" title="Data" />
+    <img src="https://i.imgur.com/9j4IhTZ.png" alt="Relógio" title="Hora" />
+  </div>
   <p><strong>Dia:</strong> 13 de Julho de 2025 (sábado)<br />
-    <strong>Hora:</strong> Das 16h às 23h</p>
+  <strong>Hora:</strong> Das 16h às 23h</p>
 </section>
 
 <section>
   <h2>📍 Local</h2>
+  <div class="img-row">
+    <img src="https://i.imgur.com/ELddDG2.png" alt="Praça" title="Local" />
+  </div>
   <p>Praça Central do Bairro São João<br />
-    Rua das Palmeiras, 123 – São João do Sul</p>
+  Rua das Palmeiras, 123 – São João do Sul</p>
 </section>
 
-<section class="precos">
+<section>
   <h2>🍴 Comidas Típicas e Preços</h2>
+  <div class="img-row">
+    <img src="https://i.imgur.com/sGx7Bd9.jpg" alt="Canjica" title="Canjica" />
+    <img src="https://i.imgur.com/I3UUM5g.jpg" alt="Pamonha" title="Pamonha" />
+    <img src="https://i.imgur.com/m6oGpDb.jpg" alt="Milho cozido" title="Milho cozido" />
+    <img src="https://i.imgur.com/HoO8H93.jpg" alt="Maçã do amor" title="Maçã do amor" />
+  </div>
   <ul>
     <li>Canjica: R$ 5,00</li>
     <li>Pamonha: R$ 6,00</li>
@@ -88,8 +148,12 @@
   </ul>
 </section>
 
-<section class="brincadeiras">
+<section>
   <h2>🎯 Brincadeiras</h2>
+  <div class="img-row">
+    <img src="https://i.imgur.com/jUuOL5B.jpg" alt="Pescaria" title="Pescaria" />
+    <img src="https://i.imgur.com/Zp57nEi.jpg" alt="Bingo" title="Bingo" />
+  </div>
   <ul>
     <li>Pescaria – R$ 3,00</li>
     <li>Boca do Palhaço – R$ 2,00</li>
