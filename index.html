@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Festa Junina - Comidas Típicas</title>
+<title>Festa Junina - Comidas & Brincadeiras</title>
 
 <!-- Fonte divertida -->
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -40,23 +40,25 @@
     color: #d84315;
     border-bottom: 3px solid #d84315;
     padding-bottom: 8px;
+    margin-top: 40px;
   }
 
   .data-festa {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-bottom: 20px;
     font-weight: bold;
     text-align: center;
+    color: #bf360c;
   }
 
-  .comida-lista {
+  .lista {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
   }
 
-  .comida {
+  .item {
     background-color: #ffccbc;
     border-radius: 12px;
     width: 200px;
@@ -66,27 +68,27 @@
     transition: transform 0.2s ease-in-out;
   }
 
-  .comida:hover {
+  .item:hover {
     transform: scale(1.05);
   }
 
-  .comida img {
+  .item img {
     width: 100%;
     height: 140px;
     object-fit: cover;
   }
 
-  .comida-info {
+  .item-info {
     padding: 15px;
   }
 
-  .comida-info h3 {
+  .item-info h3 {
     margin: 0 0 10px 0;
     font-family: 'Pacifico', cursive;
     color: #bf360c;
   }
 
-  .comida-info p {
+  .item-info p {
     font-size: 1.1em;
     margin: 0;
   }
@@ -99,11 +101,11 @@
   }
 
   @media(max-width: 600px) {
-    .comida-lista {
+    .lista {
       flex-direction: column;
       align-items: center;
     }
-    .comida {
+    .item {
       width: 90%;
     }
   }
@@ -112,62 +114,105 @@
 </head>
 <body>
 
-<header>Festa Junina - Comidas Típicas</header>
+<header>Festa Junina - Comidas & Brincadeiras</header>
 
 <main>
   <div class="data-festa">📅 Data da Festa: 20 de Julho de 2025</div>
 
-  <h2>Delícias e Preços</h2>
-
-  <div class="comida-lista">
-    <div class="comida">
+  <h2>🍴 Comidas Típicas</h2>
+  <div class="lista">
+    <div class="item">
       <img src="https://i.imgur.com/m6oGpDb.jpg" alt="Milho cozido" />
-      <div class="comida-info">
+      <div class="item-info">
         <h3>Milho Cozido</h3>
         <p>R$ 4,00</p>
       </div>
     </div>
 
-    <div class="comida">
+    <div class="item">
       <img src="https://i.imgur.com/I3UUM5g.jpg" alt="Pamonha" />
-      <div class="comida-info">
+      <div class="item-info">
         <h3>Pamonha</h3>
         <p>R$ 6,00</p>
       </div>
     </div>
 
-    <div class="comida">
+    <div class="item">
       <img src="https://i.imgur.com/sGx7Bd9.jpg" alt="Canjica" />
-      <div class="comida-info">
+      <div class="item-info">
         <h3>Canjica</h3>
         <p>R$ 5,00</p>
       </div>
     </div>
 
-    <div class="comida">
+    <div class="item">
       <img src="https://i.imgur.com/HoO8H93.jpg" alt="Maçã do amor" />
-      <div class="comida-info">
+      <div class="item-info">
         <h3>Maçã do Amor</h3>
         <p>R$ 3,00</p>
       </div>
     </div>
 
-    <div class="comida">
+    <div class="item">
       <img src="https://i.imgur.com/UoKUMxP.jpg" alt="Quentão" />
-      <div class="comida-info">
+      <div class="item-info">
         <h3>Quentão (sem álcool)</h3>
         <p>R$ 4,00</p>
       </div>
     </div>
 
-    <div class="comida">
+    <div class="item">
       <img src="https://i.imgur.com/L12q2uG.jpg" alt="Cachorro-quente" />
-      <div class="comida-info">
+      <div class="item-info">
         <h3>Cachorro-quente</h3>
         <p>R$ 7,00</p>
       </div>
     </div>
   </div>
+
+  <h2>🎯 Brincadeiras</h2>
+  <div class="lista">
+    <div class="item">
+      <img src="https://i.imgur.com/jUuOL5B.jpg" alt="Pescaria" />
+      <div class="item-info">
+        <h3>Pescaria</h3>
+        <p>R$ 3,00</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://i.imgur.com/7vR5pTO.jpg" alt="Boca do Palhaço" />
+      <div class="item-info">
+        <h3>Boca do Palhaço</h3>
+        <p>R$ 2,00</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://i.imgur.com/8HoVzzI.jpg" alt="Cadeia" />
+      <div class="item-info">
+        <h3>Cadeia</h3>
+        <p>R$ 5,00</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://i.imgur.com/Tv9kjxi.jpg" alt="Dança da Cadeira" />
+      <div class="item-info">
+        <h3>Dança da Cadeira</h3>
+        <p>Grátis</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://i.imgur.com/Zp57nEi.jpg" alt="Bingo" />
+      <div class="item-info">
+        <h3>Bingo</h3>
+        <p>R$ 5,00 (com prêmios!)</p>
+      </div>
+    </div>
+  </div>
+
 </main>
 
 <footer>
