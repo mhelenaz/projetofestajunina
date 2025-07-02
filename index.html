@@ -1,83 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Festa Junina - Comidas & Brincadeiras</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Festa Junina - São João 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Festa Junina São João 2025</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#programacao">Programação</a></li>
+                <li><a href="#comidas">Comidas</a></li>
+                <li><a href="#bebidas">Bebidas</a></li>
+                <li><a href="#brincadeiras">Brincadeiras</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Fonte divertida -->
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Main Section -->
+    <main>
+        <section id="inicio">
+            <div class="content">
+                <h2>Bem-vindo à Festa Junina São João 2025!</h2>
+                <p>Venha celebrar com a gente uma das maiores festas tradicionais do Brasil! A festa será cheia de música, danças, comidas típicas e muita diversão!</p>
+                <p><strong>Data:</strong> 24 de Junho de 2025</p>
+                <p><strong>Local:</strong> Praça Central, Cidade X</p>
+            </div>
+        </section>
 
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background: #fff8e1;
-    color: #5d4037;
-    margin: 0;
-    padding: 20px;
-  }
+        <!-- Programação -->
+        <section id="programacao">
+            <h2>Programação</h2>
+            <div class="programacao-item">
+                <h3>Abertura</h3>
+                <p><strong>Horário:</strong> 16:00</p>
+                <p>Abertura oficial com apresentação da quadrilha e show de fogos de artifício!</p>
+            </div>
+            <div class="programacao-item">
+                <h3>Quadrilha Junina</h3>
+                <p><strong>Horário:</strong> 18:00</p>
+                <p>Participe da tradicional dança de quadrilha com todos os participantes!</p>
+            </div>
+            <div class="programacao-item">
+                <h3>Show de Forró</h3>
+                <p><strong>Horário:</strong> 20:00</p>
+                <p>Prepare os pés para dançar com as melhores bandas de forró da região!</p>
+            </div>
+        </section>
 
-  header {
-    background-color: #ff7043;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-family: 'Pacifico', cursive;
-    font-size: 2.5em;
-    border-radius: 8px;
-  }
+        <!-- Comidas -->
+        <section id="comidas">
+            <h2>Comidas Típicas</h2>
+            <div class="comida-item">
+                <h3>Pipoca</h3>
+                <p>Clássica pipoca de festa junina, com aquele toque especial de manteiga!</p>
+            </div>
+            <div class="comida-item">
+                <h3>Cachorro-quente</h3>
+                <p>Deliciosos cachorro-quentes para matar a fome durante a festa.</p>
+            </div>
+            <div class="comida-item">
+                <h3>Canjica</h3>
+                <p>Doce típico com milho e leite condensado, perfeito para o clima junino.</p>
+            </div>
+        </section>
 
-  main {
-    max-width: 900px;
-    margin: 30px auto;
-    background-color: #fff3e0;
-    border-radius: 10px;
-    padding: 25px;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
-  }
+        <!-- Bebidas -->
+        <section id="bebidas">
+            <h2>Bebidas</h2>
+            <div class="bebida-item">
+                <h3>Quentão</h3>
+                <p>Aquele quentão bem quente, perfeito para aquecer durante a noite!</p>
+            </div>
+            <div class="bebida-item">
+                <h3>Cerveja Artesanal</h3>
+                <p>Para quem gosta de uma boa cerveja artesanal, temos as melhores opções da região.</p>
+            </div>
+            <div class="bebida-item">
+                <h3>Refrigerante</h3>
+                <p>Para quem prefere algo mais refrescante, temos opções de refrigerantes variados.</p>
+            </div>
+        </section>
 
-  h2 {
-    color: #d84315;
-    border-bottom: 3px solid #d84315;
-    padding-bottom: 8px;
-    margin-top: 40px;
-  }
+        <!-- Brincadeiras -->
+        <section id="brincadeiras">
+            <h2>Brincadeiras</h2>
+            <div class="brincadeira-item">
+                <h3>Pescaria</h3>
+                <p>Ganhe prêmios incríveis na nossa pescaria junina!</p>
+            </div>
+            <div class="brincadeira-item">
+                <h3>Corrida do Saco</h3>
+                <p>Divirta-se com a clássica corrida do saco! Quem chegar primeiro ganha um prêmio.</p>
+            </div>
+            <div class="brincadeira-item">
+                <h3>Jogo de Argolas</h3>
+                <p>Tente acertar as argolas nos garrafões e leve para casa um prêmio especial.</p>
+            </div>
+        </section>
+    </main>
 
-  .data-festa {
-    font-size: 1.3em;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-align: center;
-    color: #bf360c;
-  }
-
-  .lista {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    justify-content: center;
-  }
-
-  .item {
-    background-color: #ffccbc;
-    border-radius: 12px;
-    width: 200px;
-    box-shadow: 1px 1px 8px rgba(0,0,0,0.15);
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.2s ease-in-out;
-  }
-
-  .item:hover {
-    transform: scale(1.05);
-  }
-
-  .item img {
-    width: 100%;
-    height: 140px;
-    object-fit: cover;
-  }
-
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Festa Junina São João. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
   .item-info {
     padding: 15px;
   }
