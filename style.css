@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
@@ -73,31 +73,25 @@ h2 {
 }
 
 /* Itens das seções */
-.programacao-item, .comida-item, .brincadeira-item {
+.item {
     background-color: white;
     border-radius: 8px;
     padding: 1em;
     margin-bottom: 1.5em;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
 }
 
-.programacao-item:hover, .comida-item:hover, .brincadeira-item:hover {
-    transform: scale(1.05);
-}
-
-.programacao-item h3, .comida-item h3, .brincadeira-item h3 {
+.item h3 {
     color: #D32F2F; /* Vermelho brilhante */
     margin-bottom: 0.5em;
     font-family: 'Anton', sans-serif;
 }
 
-.programacao-item p, .comida-item p, .brincadeira-item p {
+.item p {
     color: #616161; /* Texto cinza suave */
     font-size: 1.1em;
 }
 
-/* Rodapé */
 footer {
     text-align: center;
     padding: 1em;
