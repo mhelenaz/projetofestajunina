@@ -1,73 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convite para Festa Junina</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Festa Junina do Arraiá do Bairro!</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff8dc;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+  header {
+    background-color: #e67300;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  h1 {
+    margin: 0 0 10px 0;
+    font-size: 2em;
+  }
+  section {
+    margin: 20px 0;
+  }
+  .precos, .brincadeiras {
+    background-color: #ffefd5;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin: 10px 0;
+  }
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #555;
+  }
+
+  /* Responsividade */
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+    h1 {
+      font-size: 1.5em;
+    }
+    section {
+      margin: 15px 0;
+    }
+  }
+</style>
 </head>
 <body>
-    <header>
-        <h1>🎉 Convite para a Festa Junina! 🎉</h1>
-    </header>
 
-    <section class="intro">
-        <h2>🌽 Vamos Celebrar a Tradição Junina Juntos! 🌽</h2>
-        <p>Está chegando a melhor festa do ano! Venha dançar, comer e se divertir com a gente. Será uma noite cheia de alegria, risadas e muitas tradições caipiras!</p>
-        <img src="https://www.exemplo.com/imagens/festa-junina.jpg" alt="Festa Junina" class="imagem-principal">
-    </section>
+<header>
+  <h1>🌽 Arraiá do Bairro São João 🎶</h1>
+  <p>Venha curtir nossa Festa Junina cheia de alegria, comidas típicas e muita diversão!</p>
+</header>
 
-    <section class="detalhes">
-        <h2>🗓️ Quando e Onde?</h2>
-        <ul>
-            <li><strong>Data:</strong> 12 de Junho de 2025</li>
-            <li><strong>Horário:</strong> A partir das 18h</li>
-            <li><strong>Local:</strong> Clube Junino - Rua das Flores, 100</li>
-        </ul>
-    </section>
+<section>
+  <h2>📅 Data e Hora</h2>
+  <p><strong>Dia:</strong> 13 de Julho de 2025 (sábado)<br />
+    <strong>Hora:</strong> Das 16h às 23h</p>
+</section>
 
-    <section class="comidas">
-        <h2>🍠 O que Vai Ter de Comida?</h2>
-        <div class="galeria-comidas">
-            <div class="comida-item">
-                <img src="https://www.exemplo.com/imagens/pamonha.jpg" alt="Pamonha">
-                <p>Pamonha</p>
-            </div>
-            <div class="comida-item">
-                <img src="https://www.exemplo.com/imagens/canjiquinha.jpg" alt="Canjiquinha">
-                <p>Canjiquinha</p>
-            </div>
-            <div class="comida-item">
-                <img src="https://www.exemplo.com/imagens/pipoca.jpg" alt="Pipoca">
-                <p>Pipoca</p>
-            </div>
-            <div class="comida-item">
-                <img src="https://www.exemplo.com/imagens/cuscuz.jpg" alt="Cuscuz">
-                <p>Cuscuz</p>
-            </div>
-        </div>
-    </section>
+<section>
+  <h2>📍 Local</h2>
+  <p>Praça Central do Bairro São João<br />
+    Rua das Palmeiras, 123 – São João do Sul</p>
+</section>
 
-    <section class="brincadeiras">
-        <h2>🎯 O que Vai Ter de Brincadeiras?</h2>
-        <ul>
-            <li>💃 Quadrilha Junina</li>
-            <li>🏆 Pescaria</li>
-            <li>🎯 Jogo da Argola</li>
-            <li>🎯 Correio Elegante</li>
-            <li>🌽 Concurso de Melhor Figurino</li>
-        </ul>
-    </section>
+<section class="precos">
+  <h2>🍴 Comidas Típicas e Preços</h2>
+  <ul>
+    <li>Canjica: R$ 5,00</li>
+    <li>Pamonha: R$ 6,00</li>
+    <li>Milho cozido: R$ 4,00</li>
+    <li>Cuscuz: R$ 5,00</li>
+    <li>Maçã do amor: R$ 3,00</li>
+    <li>Quentão (sem álcool): R$ 4,00</li>
+    <li>Cachorro-quente: R$ 7,00</li>
+  </ul>
+</section>
 
-    <footer>
-        <p>Estamos te esperando para celebrar as tradições juninas com muita animação e alegria!</p>
-        <p>Confirme sua presença pelo WhatsApp: (XX) XXXX-XXXX</p>
-    </footer>
+<section class="brincadeiras">
+  <h2>🎯 Brincadeiras</h2>
+  <ul>
+    <li>Pescaria – R$ 3,00</li>
+    <li>Boca do Palhaço – R$ 2,00</li>
+    <li>Cadeia – R$ 5,00</li>
+    <li>Dança da cadeira – Grátis</li>
+    <li>Bingo – R$ 5,00 (com prêmios!)</li>
+  </ul>
+</section>
 
-    <div class="bandeirinhas">
-        <img src="https://www.exemplo.com/imagens/bandeirinha1.png" alt="Bandeirinha">
-        <img src="https://www.exemplo.com/imagens/bandeirinha2.png" alt="Bandeirinha">
-        <img src="https://www.exemplo.com/imagens/bandeirinha3.png" alt="Bandeirinha">
-    </div>
+<footer>
+  <p>Esperamos por você! Traga sua família e venha se divertir no nosso arraiá! 🎉</p>
+</footer>
+
 </body>
 </html>
