@@ -6,74 +6,107 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
     color: #333;
     line-height: 1.6;
 }
 
+/* Header */
 header {
-    background-color: #d95e5e;
+    background-color: #FF6F00; /* Laranja Junino */
     color: white;
-    padding: 1em 0;
+    padding: 2em;
     text-align: center;
+    border-bottom: 4px solid #F44336; /* Vermelho vibrante */
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 0.5em;
+    font-family: 'Caveat', cursive;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: 1em;
+    gap: 30px;
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
+    padding: 0.5em 1em;
+    background-color: #FF4081; /* Rosa vibrante */
+    border-radius: 5px;
 }
 
+nav ul li a:hover {
+    background-color: #FF80AB; /* Rosa mais claro */
+}
+
+/* Main Section */
 main {
     padding: 20px;
+    background-color: #FFF3E0; /* Fundo suave laranja */
 }
 
-h2 {
-    color: #d95e5e;
-    margin-bottom: 1em;
-}
-
-h3 {
-    color: #d95e5e;
-    margin-bottom: 0.5em;
-}
-
+/* Seções */
 .section {
     margin-bottom: 2em;
 }
 
-.comida-item, .bebida-item, .brincadeira-item, .programacao-item {
-    background-color: #fff;
+h2 {
+    color: #FF6F00; /* Laranja Junino */
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Programação */
+.programacao-item, .comida-item, .brincadeira-item {
+    background-color: white;
     border-radius: 8px;
     padding: 1em;
-    margin-bottom: 1em;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5em;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
+.programacao-item:hover, .comida-item:hover, .brincadeira-item:hover {
+    transform: scale(1.05);
+}
+
+.programacao-item h3, .comida-item h3, .brincadeira-item h3 {
+    color: #D32F2F; /* Vermelho brilhante */
+    margin-bottom: 0.5em;
+}
+
+.programacao-item p, .comida-item p, .brincadeira-item p {
+    color: #616161; /* Texto cinza suave */
+    font-size: 1.1em;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 1em 0;
-    background-color: #333;
+    padding: 1em;
+    background-color: #FF6F00;
     color: white;
+    margin-top: 2em;
+    font-size: 0.9em;
 }
 
-footer p {
-    font-size: 0.9em;
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
