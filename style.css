@@ -7,9 +7,11 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
+    background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
+    padding: 0;
+    margin: 0;
 }
 
 /* Header */
@@ -45,19 +47,19 @@ nav ul li a {
     padding: 0.5em 1em;
     background-color: #FF4081; /* Rosa vibrante */
     border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
     background-color: #FF80AB; /* Rosa mais claro */
 }
 
-/* Main Section */
+/* Seções principais */
 main {
     padding: 20px;
     background-color: #FFF3E0; /* Fundo suave laranja */
 }
 
-/* Seções */
 .section {
     margin-bottom: 2em;
 }
@@ -67,9 +69,10 @@ h2 {
     margin-bottom: 1em;
     text-align: center;
     font-size: 2em;
+    font-family: 'Anton', sans-serif;
 }
 
-/* Programação */
+/* Itens das seções */
 .programacao-item, .comida-item, .brincadeira-item {
     background-color: white;
     border-radius: 8px;
@@ -86,6 +89,7 @@ h2 {
 .programacao-item h3, .comida-item h3, .brincadeira-item h3 {
     color: #D32F2F; /* Vermelho brilhante */
     margin-bottom: 0.5em;
+    font-family: 'Anton', sans-serif;
 }
 
 .programacao-item p, .comida-item p, .brincadeira-item p {
@@ -93,7 +97,7 @@ h2 {
     font-size: 1.1em;
 }
 
-/* Footer */
+/* Rodapé */
 footer {
     text-align: center;
     padding: 1em;
@@ -108,5 +112,9 @@ footer {
     nav ul {
         flex-direction: column;
         gap: 10px;
+    }
+
+    h2 {
+        font-size: 1.5em;
     }
 }
